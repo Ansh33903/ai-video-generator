@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SkillLab AI Video Platform</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+font-family:'Inter',sans-serif;
+background:#0b0b0b;
+color:white;
+}
+
+header{
+position:sticky;
+top:0;
+background:#000;
+padding:18px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+border-bottom:1px solid #1f1f1f;
+}
+
+.logo{
+font-weight:700;
+font-size:22px;
+letter-spacing:1px;
+}
+
+nav a{
+margin-left:25px;
+text-decoration:none;
+color:#aaa;
+font-size:14px;
+}
+
+nav a:hover{color:white}
+
+.hero{
+text-align:center;
+padding:120px 20px;
+}
+
+.hero h1{
+font-size:56px;
+max-width:900px;
+margin:auto;
+line-height:1.2;
+}
+
+.hero p{
+margin-top:20px;
+color:#aaa;
+font-size:18px;
+}
+
+.prompt-box{
+margin-top:40px;
+display:flex;
+justify-content:center;
+gap:10px;
+}
+
+.prompt-box input{
+width:420px;
+padding:14px;
+border-radius:8px;
+border:none;
+background:#141414;
+color:white;
+}
+
+.btn{
+padding:14px 24px;
+border:none;
+border-radius:8px;
+background:white;
+color:black;
+font-weight:600;
+cursor:pointer;
+}
+
+.section{
+padding:80px 40px;
+max-width:1200px;
+margin:auto;
+}
+
+.section h2{
+font-size:34px;
+margin-bottom:40px;
+text-align:center;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:20px;
+}
+
+.card{
+background:#111;
+padding:25px;
+border-radius:12px;
+border:1px solid #1d1d1d;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+border-color:#333;
+}
+
+.card h3{
+margin-bottom:10px;
+font-size:18px;
+}
+
+.card p{
+color:#aaa;
+font-size:14px;
+}
+
+.dashboard-preview{
+margin-top:50px;
+background:#0e0e0e;
+padding:40px;
+border-radius:14px;
+border:1px solid #1f1f1f;
+}
+
+.dashboard-grid{
+display:grid;
+grid-template-columns:250px 1fr;
+gap:30px;
+}
+
+.sidebar{
+background:#111;
+padding:20px;
+border-radius:10px;
+}
+
+.sidebar h4{
+margin-bottom:15px;
+}
+
+.sidebar ul{
+list-style:none;
+}
+
+.sidebar li{
+margin:10px 0;
+color:#aaa;
+}
+
+.workspace{
+background:#0f0f0f;
+padding:30px;
+border-radius:10px;
+}
+
+.video-box{
+height:200px;
+border-radius:10px;
+border:1px dashed #333;
+display:flex;
+align-items:center;
+justify-content:center;
+color:#777;
+}
+
+.templates{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+.template-card{
+background:#111;
+padding:30px;
+text-align:center;
+border-radius:12px;
+border:1px solid #1d1d1d;
+}
+
+footer{
+padding:40px;
+text-align:center;
+color:#777;
+border-top:1px solid #1a1a1a;
+margin-top:60px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">SkillLab AI</div>
+<nav>
+<a href="#">Features</a>
+<a href="#">Templates</a>
+<a href="#">Dashboard</a>
+<a href="#">Login</a>
+</nav>
+</header>
+
+<section class="hero">
+<h1>Create Professional AI Videos in Minutes</h1>
+<p>Generate scripts, voiceovers, animations, and 4K videos automatically using AI.</p>
+
+<div class="prompt-box">
+<input placeholder="Describe your video idea...">
+<button class="btn">Generate Video</button>
+</div>
+
+</section>
+
+<section class="section">
+<h2>AI Video Generation Features</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>AI Script Generator</h3>
+<p>Enter a topic and automatically generate engaging video scripts.</p>
+</div>
+
+<div class="card">
+<h3>AI Voiceover</h3>
+<p>Human-like voices with multiple languages, accents and emotions.</p>
+</div>
+
+<div class="card">
+<h3>4K Video Rendering</h3>
+<p>Export professional ultra high quality videos in 4K resolution.</p>
+</div>
+
+<div class="card">
+<h3>AI Scene Generator</h3>
+<p>Automatically convert scripts into scenes with visuals and clips.</p>
+</div>
+
+<div class="card">
+<h3>AI Avatar Presenter</h3>
+<p>Add talking AI avatars or presenters to your videos.</p>
+</div>
+
+<div class="card">
+<h3>Auto Subtitles</h3>
+<p>Generate animated captions and subtitles automatically.</p>
+</div>
+
+<div class="card">
+<h3>Music & Sound Effects</h3>
+<p>AI suggests background music based on the mood of the video.</p>
+</div>
+
+<div class="card">
+<h3>Drag & Drop Editor</h3>
+<p>Edit scenes, animations, and text using a simple visual editor.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+<h2>Template Library</h2>
+
+<div class="templates">
+
+<div class="template-card">YouTube Videos</div>
+<div class="template-card">TikTok Reels</div>
+<div class="template-card">Instagram Reels</div>
+<div class="template-card">Educational Videos</div>
+<div class="template-card">Explainer Videos</div>
+<div class="template-card">Marketing Ads</div>
+
+</div>
+
+</section>
+
+<section class="section">
+<h2>Creator Dashboard</h2>
+
+<div class="dashboard-preview">
+
+<div class="dashboard-grid">
+
+<div class="sidebar">
+<h4>Projects</h4>
+<ul>
+<li>My Videos</li>
+<li>Scripts</li>
+<li>Templates</li>
+<li>Exports</li>
+<li>Cloud Storage</li>
+</ul>
+</div>
+
+<div class="workspace">
+<h3>Video Editor</h3>
+<div class="video-box">AI Video Preview Area</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 SkillLab AI Video Platform — Create Unlimited AI Videos
+</footer>
+
+</body>
+</html>
